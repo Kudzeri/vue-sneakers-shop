@@ -11,7 +11,7 @@
     <ul class="flex items-center gap-10">
       <li class="flex items-center gap-3 text-gray-400 hover:text-black cursor-pointer">
         <img src="/cart.svg" alt="Cart" />
-        <span>1205 руб.</span>
+        <span>32305 тг.</span>
       </li>
       <li class="flex items-center gap-3 text-gray-400 hover:text-black cursor-pointer">
         <img src="/heart.svg" alt="Heart" />
