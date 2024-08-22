@@ -1,6 +1,6 @@
 <script setup>
 import DrawerHead from './DrawerHead.vue'
-import CartItemList from './CartItemList.vue';
+import CartItemList from './CartItemList.vue'
 </script>
 
 <template>
@@ -9,5 +9,19 @@ import CartItemList from './CartItemList.vue';
     <DrawerHead />
 
     <CartItemList />
+
+    <div class="flex flex-col gap-4">
+      <div class="flex gap-2">
+        <span>Итого:</span>
+        <div class="flex-1 border-b border-dotted"></div>
+        <span class="font-bold">12990 ₸</span>
+      </div>
+
+      <div class="flex gap-2">
+        <span>Налог 5%:</span>
+        <div class="flex-1 border-b border-dotted"></div>
+        <span class="font-bold">900 ₸</span>
+      </div>
+    </div>
   </div>
 </template>

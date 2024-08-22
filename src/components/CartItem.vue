@@ -12,7 +12,7 @@ defineProps({
         <p>Кроссовки Nike Air Max 270</p>
 
         <div class="flex justify-between mt-2">
-            <span class="font-bold">12990 тг.</span>
+            <span class="font-bold">12990 ₸</span>
             <img class="opacity-40 hover:opacity-100 cursor-pointer transition" src="/close.svg" alt="Close">
         </div>
     </div>
