@@ -2,7 +2,9 @@
 defineProps({
   imageUrl: String,
   title: String,
-  cost: Number
+  cost: Number,
+  isFavorite: Boolean,
+  isAdded: Boolean
 })
 </script>
 
@@ -10,7 +12,7 @@ defineProps({
   <div
     class="relative p-8 bg-white border border-slate-100 rounded-3xl cursor-pointer transition hover:-translate-y-2 hover:shadow-xl"
   >
-    <img class="absolute top-8 left-8" src="/like-2.svg" alt="Like" />
+    <img class="absolute top-8 left-8" :src="isFavorite ? '/like-2.svg' : '/like-1.svg'" alt="Like" />
     <img :src="imageUrl" alt="Sneakers img" />
     <p>{{ title }}</p>
 
@@ -20,7 +22,7 @@ defineProps({
         <span class="font-bold">{{ cost }} тг.</span>
       </div>
 
-      <img src="/plus.svg" alt="Plus" />
+      <img :src="isAdded ? '/checked.svg' : '/plus.svg'" :alt="isAdded ? 'Checked' : 'Plus'" />
     </div>
   </div>
 </template>
